@@ -1475,20 +1475,6 @@ wrapt = ">=1.10,<2"
 dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 
 [[package]]
-name = "deprecation"
-version = "2.1.0"
-description = "A library to handle automated deprecations"
-optional = false
-python-versions = "*"
-files = [
-    {file = "deprecation-2.1.0-py2.py3-none-any.whl", hash = "sha256:a10811591210e1fb0e768a8c25517cabeabcba6f0bf96564f8ff45189f90b14a"},
-    {file = "deprecation-2.1.0.tar.gz", hash = "sha256:72b3bde64e5d778694b0cf68178aed03d15e15477116add3fb773e581f9518ff"},
-]
-
-[package.dependencies]
-packaging = "*"
-
-[[package]]
 name = "dictdiffer"
 version = "0.9.0"
 description = "Dictdiffer is a library that helps you to diff and patch dictionaries."
@@ -4029,55 +4015,6 @@ files = [
 
 [[package]]
 name = "pikepdf"
-version = "8.2.3"
-description = "Read and write PDFs with Python, powered by qpdf"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "pikepdf-8.2.3-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:385eaf67db56a0d95cb3199bf079fad9329b7edf4fcb3c210314a4e0f16e5d1b"},
-    {file = "pikepdf-8.2.3-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:a8f57bf6065a7b16a432b0697d98a7a4c9838c25df3659f7871b62cb7290a1bb"},
-    {file = "pikepdf-8.2.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:cc484d4ce796feecfad194419973b0d79f57941dabd4babf46931428ed6eab5e"},
-    {file = "pikepdf-8.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:199a73bea9cd3bf85022b601028234241f79c9ec55ed97011df189421f220553"},
-    {file = "pikepdf-8.2.3-cp310-cp310-win_amd64.whl", hash = "sha256:ed50ca3d49ed3117da7e4b4545c3ff3e99f96033682a5a38b30ab234d465fe93"},
-    {file = "pikepdf-8.2.3-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:447f0e91fed65bdceeeb82822f0780f9e06a0e9a9e6a0c368a42c6cc782bf2a3"},
-    {file = "pikepdf-8.2.3-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:445d863aa15cebfbeb660bb3db6db9b045a89e66033c4a75d236fed4168960d1"},
-    {file = "pikepdf-8.2.3-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:243ddfc0d8b1482764476c26dbb4217066745aecbe2f630ddfff4ca926c2a4dc"},
-    {file = "pikepdf-8.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cc73b71c78c531a38a3729d24bb75b03726ba947fac30be162ea215658ac5187"},
-    {file = "pikepdf-8.2.3-cp311-cp311-win_amd64.whl", hash = "sha256:1aeac641d991b527269edf8742598db1899b6929a6f6f2f641a233e9620d732f"},
-    {file = "pikepdf-8.2.3-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:15771553bd4517b57a6f837efb4d037e237286cc15ed2df4b78e109c2ba033cd"},
-    {file = "pikepdf-8.2.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:3e90d90330fc43b6790bf02c07351bc670f68251e226d77176eb36aa487f25d5"},
-    {file = "pikepdf-8.2.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b5fcfb60fe16881b1075ee69563892a45b69aefc2be7214353fb2cae76c42250"},
-    {file = "pikepdf-8.2.3-cp38-cp38-win_amd64.whl", hash = "sha256:7e8c459e7b22aaae6618159828b99b771ce7b9f8d4d435517c195a744f38d529"},
-    {file = "pikepdf-8.2.3-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:b54e0d4733630d5f5a7059690a335121a3eaa9fd06ee27cc73dd46dc2c804650"},
-    {file = "pikepdf-8.2.3-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:62e2db9f97e1e4e85eee91c01fc0d78e02b55e02bc955fccb7b868f47442601d"},
-    {file = "pikepdf-8.2.3-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:3d6b2f108af5be203917f912a106b863467d7871caca34ad8b3830c0013948cf"},
-    {file = "pikepdf-8.2.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fc4ec23843a72fc496791dff02138b281259bb9974935287eb341de47e306789"},
-    {file = "pikepdf-8.2.3-cp39-cp39-win_amd64.whl", hash = "sha256:72dc8320a402c0e1ce0fb0749636af7e168de99184de5dadc206692cb5da9e86"},
-    {file = "pikepdf-8.2.3-pp310-pypy310_pp73-macosx_10_9_x86_64.whl", hash = "sha256:41d447ceaa2ad4ebd7a2ae727e1926dd8d2d7ea3f347a3af498328c0d82e3fff"},
-    {file = "pikepdf-8.2.3-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ed512760edb453ad0cee48e306b623ca40ad81b46891cc552ae0024360aa91fb"},
-    {file = "pikepdf-8.2.3-pp38-pypy38_pp73-macosx_10_9_x86_64.whl", hash = "sha256:2ad9777d7a101aa67b9cb0cb5059a15b723a6ead3d3fd3276117812e82669ad6"},
-    {file = "pikepdf-8.2.3-pp38-pypy38_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dc26b0e8b3d9d9032e656ff58ac5ac3390b2cd445f5bb29c6d6b897cd960f31c"},
-    {file = "pikepdf-8.2.3-pp38-pypy38_pp73-win_amd64.whl", hash = "sha256:22118062f8ada721afcfad04c75d50ca3942d0569947d5e2290cc82a010d1021"},
-    {file = "pikepdf-8.2.3-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:7db93e348f84508743b94d108e82267512680b1824aaf3d5211b1da9b9510745"},
-    {file = "pikepdf-8.2.3-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:38a5aa7aba25a70a8651f8a43934c2df3edd83a031904facee7433f374cf1264"},
-    {file = "pikepdf-8.2.3-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:b0d0659c17d58a18d474e37cb54568b3ac9d32201fc75d302c33a70ded054227"},
-    {file = "pikepdf-8.2.3.tar.gz", hash = "sha256:77dc52bc0064af10abce890bc0e2496d57ba766e0946a5ac8701a853b00f3403"},
-]
-
-[package.dependencies]
-deprecation = "*"
-lxml = ">=4.8"
-packaging = "*"
-Pillow = {version = ">=9.0", markers = "platform_python_implementation != \"PyPy\" or python_version >= \"3.9\""}
-
-[package.extras]
-dev = ["pre-commit", "typer[all]"]
-docs = ["GitPython", "PyGithub", "Sphinx (>=3)", "ipython", "matplotlib", "pybind11", "requests", "sphinx-design", "sphinx-issues", "sphinx-rtd-theme", "tomli"]
-mypy = ["lxml-stubs", "types-Pillow", "types-requests", "types-setuptools"]
-test = ["attrs (>=20.2.0)", "coverage[toml]", "hypothesis (>=6.36)", "numpy (>=1.21.0)", "psutil (>=5.9)", "pybind11", "pytest (>=6.2.5)", "pytest-cov (>=3.0.0)", "pytest-timeout (>=2.1.0)", "pytest-xdist (>=2.5.0)", "python-dateutil (>=2.8.1)", "python-xmp-toolkit (>=2.0.1)", "tomli"]
-
-[[package]]
-name = "pikepdf"
 version = "8.13.0"
 description = "Read and write PDFs with Python, powered by qpdf"
 optional = false
@@ -4122,7 +4059,10 @@ files = [
 
 [package.dependencies]
 Deprecated = "*"
-lxml = {version = ">=4.8,<5", markers = "python_version < \"3.10\""}
+lxml = [
+    {version = ">=4.8,<5", markers = "python_version < \"3.10\""},
+    {version = ">=4.8", markers = "python_version >= \"3.10\""},
+]
 packaging = "*"
 Pillow = ">=10.0.1"
 
@@ -4207,13 +4147,13 @@ xmp = ["defusedxml"]
 
 [[package]]
 name = "pip"
-version = "23.2.1"
+version = "23.3"
 description = "The PyPA recommended tool for installing Python packages."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "pip-23.2.1-py3-none-any.whl", hash = "sha256:7ccf472345f20d35bdc9d1841ff5f313260c2c33fe417f48c30ac46cccabf5be"},
-    {file = "pip-23.2.1.tar.gz", hash = "sha256:fb0bd5435b3200c602b5bf61d2d43c2f13c02e29c1707567ae7fbc514eb9faf2"},
+    {file = "pip-23.3-py3-none-any.whl", hash = "sha256:bc38bb52bc286514f8f7cb3a1ba5ed100b76aaef29b521d48574329331c5ae7b"},
+    {file = "pip-23.3.tar.gz", hash = "sha256:bb7d4f69f488432e4e96394612f43ab43dd478d073ef7422604a570f7157561e"},
 ]
 
 [[package]]
